@@ -8,7 +8,7 @@ class Product:
         print(f"Name: {self.name}, Price: {self.price}, Category: {self.category}")
     def __add__(self, other):
         if type(self) != type(other):
-            raise TypeError("Can only add products of the same type")
+            raise TypeError("Можно добавлять только товары одного типа")
         return self.price + other.price
 
 class Category:
@@ -19,4 +19,4 @@ class Category:
         if isinstance(product, Product):
             self.products.append(product)
         else:
-            raise TypeError("Only instances of Product class or its subclasses can be added to the category")
+            raise TypeError("В категорию можно добавлять только экземпляры класса Product или его подклассов.")
