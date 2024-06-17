@@ -1,13 +1,25 @@
-# Игнорировать файлы с расширением .pyc
-*.pyc
 
-# Игнорировать директорию с виртуальной средой Python
-venv/
-
-# Игнорировать файлы и директории
-.idea/
-.vscode/
-
-# Игнорировать файлы с настройками и кэшем
-*.log
-*.cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+*.manifest
+*.spec
+pip-log.txt
+pip-delete-this-directory.txt
